@@ -2,6 +2,8 @@
 
 After complete setup, Redis cluster will be setup in three servers. Each server will have two Redis instances, so there will be a total of six Redis instances in three servers. Three of the six instances will be replicated as slaves to the other three instances which will behave as Master nodes. No same Master and slave would be on the same server to ensure high availability of the cluster.
 
+**Note:** This cookbook works as a wrapper around the community [redisio](https://supermarket.chef.io/cookbooks/redisio) cookbook to allow for the creation of master/slave replication cluster on multiple servers.
+
 ![Image](https://i1.wp.com/codeflex.co/wp-content/uploads/2016/09/redis-cluster-failover-3-servers.jpg?w=592&ssl=1)
 
 ## Pre-requisites
