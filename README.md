@@ -30,8 +30,8 @@ $ berks upload -b Berksfile
 $ knife cookbook upload redisio
 $ cd <path-to-roles-directory>
 $ knife role from file redisiorole.rb
-$ knife bootstrap <private-ip-of-server> -U ubuntu -i <path-to-ssh-key> -p 22 -N node1 --sudo -y -r "role[redisiorole]"
-$ knife bootstrap <private-ip-of-server> -U ubuntu -i <path-to-ssh-key> -p 22 -N node2 --sudo -y -r "role[redisiorole]"
-$ knife bootstrap <private-ip-of-server> -U ubuntu -i <path-to-ssh-key> -p 22 -N node3 --sudo -y -r "role[redisiorole],recipe[redisio::sharding]"
+$ knife bootstrap <private-ip-of-server-1> -U ubuntu -i <path-to-ssh-key> -p 22 -N node1 --sudo -y -r "role[redisiorole]"
+$ knife bootstrap <private-ip-of-server-2> -U ubuntu -i <path-to-ssh-key> -p 22 -N node2 --sudo -y -r "role[redisiorole]"
+$ knife bootstrap <private-ip-of-server-3> -U ubuntu -i <path-to-ssh-key> -p 22 -N node3 --sudo -y -r "role[redisiorole],recipe[redisio::sharding]"
 ```
 
